@@ -21,13 +21,13 @@ body {
   color: #562eff;
   font-size: 24px;
   font-weight: 500;
-  /* padding: 33px 0 0 33px; */
+  padding: 33px 0 0 33px;
 }
 .all-player {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 30px;
-  /* padding: 40px 0 30px 30px; */
+  padding: 40px 0 30px 30px;
 }
 .player {
   display: flex;
