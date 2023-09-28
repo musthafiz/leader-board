@@ -21,7 +21,7 @@ body {
   color: #562eff;
   font-size: 24px;
   font-weight: 500;
-  padding: 33px 0 0 33px;
+  padding: 30px 0 0 30px;
 }
 .all-player {
   display: grid;
@@ -110,8 +110,8 @@ course start
   padding: 30px;
 }
 .course-container {
-  width: 240px;
-  height: 270px;
+  width: 30%;
+  /* height: 270px; */
   background-color: #fff;
   filter: drop-shadow(0px 3px 3px #7e7b7b);
   border-radius: 16px;
@@ -119,6 +119,7 @@ course start
 }
 .course img {
   width: 95%;
+  height: 104px;
   display: block;
   margin: 0 auto;
 }
@@ -159,19 +160,22 @@ course start
 
 .ratting-hour {
   width: 90px;
-  height: 24px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 14.5px;
   background: #ffe4e8;
+  padding: 2px;
 }
 .ratting-hour img {
   width: 20px;
   height: 20px;
 }
-/* thanks */
-@media only screen and (max-width: 600px) {
+/*....................... 
+          media
+ ..........................*/
+@media only screen and (max-width: 576px) {
   .title {
     text-align: center;
   }
@@ -185,10 +189,13 @@ course start
   }
   .all-player {
     grid-template-columns: repeat(1, 1fr);
-    /* padding: 10px; */
   }
-  .player {
+  /* .player {
     justify-content: center;
+  } */
+  .player {
+    margin: 0 auto;
+    width: 50%;
   }
   .all-blog {
     grid-template-columns: repeat(1, 1fr);
@@ -217,6 +224,78 @@ course start
   }
   .course-container {
     width: 95%;
+    height: 100%;
+  }
+  .course-title,
+  .course-desc p,
+  .ratting-section {
+    padding: 8px 12px 8px;
+  }
+  .ratting-hour {
+    width: 98px;
+    height: auto;
+  }
+  .ratting-hour img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .title {
+    text-align: center;
+  }
+  .first-area,
+  .second-area {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+  .all-player {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .all-blog {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+  .blog {
+    flex-direction: column;
+  }
+
+  br {
+    content: "";
+  }
+  .blog-title {
+    text-align: center;
+  }
+  .blog img {
+    width: 100%;
+    height: auto;
+  }
+  .title-author {
+    margin-bottom: 20px;
+  }
+  .all-course {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .course-container {
+    width: 46%;
+    height: 100%;
+  }
+  .course-title,
+  .course-desc p,
+  .ratting-section {
+    padding: 8px 18px 8px;
+  }  .ratting-hour {
+    width: 108px;
     height: auto;
   }
 }
